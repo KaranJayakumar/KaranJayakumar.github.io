@@ -1,0 +1,15 @@
+.about-me{
+    margin-top: 20vh;
+}
+.about-me h1{
+    font-size: 3.5em;
+}
+.about-me p{
+    margin-top: 2vh;
+    font-size : 1.3em;
+    margin-bottom : 5vh;
+}
+.about-me-icons i{
+    width : 3em;
+    height : 3em;
+}

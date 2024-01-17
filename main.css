@@ -15,15 +15,20 @@ body{
     padding : 3vw 8vw;
     height : 200vh;
 }
-.section{
-    position: static;
-    bottom : 0px;
+.section-container{
     display : flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 .section i{
-    cursor: pointer;
+    margin : 0;
+    padding : 0;
+    position : absolute;
+    bottom : 3vw;
+    left : 50%;
+    cursor : pointer;
 }
 header{
     width : 100%;
@@ -132,8 +137,20 @@ header{
 /*--------------------------------------------------------*/
 /*News CSS*/
 .news{
-
-    margin-top: 5vh;
+    margin-top: 3vh;
+    display : flex;
+    margin-bottom: 3vh;
+}
+.news-item{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 2vw;
+    justify-content: center;
+}
+.news-item i{
+    margin-top: 2vw;
+    margin-bottom : 3vw;
 }
 /*--------------------------------------------------------*/
 /*Contact CSS*/

@@ -43,22 +43,39 @@
                 </div>
             </div>
         </div>
-        <div class = "section" onclick = "scrollDown('.news')">
-            <i class="fa-solid fa-chevron-down fa-2x"></i>
+        <div class = "section-container">
+            <div class = "section" onclick = "scrollDown('.news')">
+                <i class="fa-solid fa-chevron-down fa-2x"></i>
+            </div>
         </div>
+        <section>
+        <h1>News</h1>
         <div class = "news">
-            <h1>News</h1>
+            <div class = "news-item">
+                <i class="fa-solid fa-book fa-4x"></i>
+                <p>Currently spearheading a cutting-edge project, "HealthAI," leveraging advanced machine learning to enhance diagnostic precision and treatment suggestions in healthcare.</p>
+            </div>
+            <div class = "news-item">
+                <i class="fa-solid fa-magnifying-glass fa-4x"></i>
+                <p>An exciting job opportunity is currently available to join Dr. Mike's dynamic team. The position involves contributing to cutting-edge projects at the intersection of artificial intelligence and healthcare.</p>
+            </div>
+            <div class = "news-item">
+                <i class="fa-brands fa-researchgate fa-4x"></i>
+                <p>Recently published a groundbreaking paper titled "Advancements in Neural Network-Based Diagnostics." This research explores the integration of neural network models to significantly improve the accuracy of medical diagnostics</p>
+            </div>
         </div>
+
+        </section>
         <div class = "contact">
             <h1>Get in touch</h1>
             <h2>Have a specific message for me? Please use the form below and I'll get back to you soon</h2>
             <div class = "contact-container">
-                    <form class = "contact-form">
-                        <input type = "text" class = "contact-input" name = "name" placeholder = "Your Name" required>
-                        <input type = "email" class = "contact-input" name = "email" placeholder = "Email" required>
-                        <textarea name = "message" placeholder = "Message" class = "contact-input"></textarea>
-                        <button type = "submit">Submit</button>
-                    </form>
+                <form class = "contact-form">
+                    <input type = "text" class = "contact-input" name = "name" placeholder = "Your Name" required>
+                    <input type = "email" class = "contact-input" name = "email" placeholder = "Email" required>
+                    <textarea name = "message" placeholder = "Message" class = "contact-input"></textarea>
+                    <button type = "submit">Submit</button>
+                </form>
             </div>
         </div>
     </body>

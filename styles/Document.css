@@ -25,4 +25,135 @@ body{
 .section i{
     cursor: pointer;
 }
+header{
+    width : 100%;
+    height : 80px;
+    background : #fbfbfe;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size : 28px;
+    font-weight :600;
+    color : #050315;
+}
+.logo span{
+    font-size : 28px;
+    font-weight : 600;
+    color : #2f27ce;
+}
+.hamburger{
+    display : none;
+}
+.nav-bar ul{
+    display : flex;
+}
+.nav-bar ul li a{
+    display : block;
+    color : #050315;
+    font-size : 20px;
+    padding : 10px 25px;
+    border-radius: 50px;
+    transition : 0.2s;
+    margin : 0 5px;
+}
+/*Navigation Bar CSS*/
+.nav-bar ul li a:hover{
+    color : #fbfbfe;
+    background : #050315;
+}
+@media only screen and (max-width : 900px){
+    .hamburger{
+        display : block;
+        cursor : pointer;
+    }
+    .nav-bar{
+        height : 0px;
+        position : absolute;
+        top : 80px;
+        left : 0;
+        right : 0;
+        width : 100vw;
+        background : #fbfbfe;
+        transition : 0.2s;
+        overflow : hidden;
+    }
+    .nav-bar.active{
+        height : 450px;
+    }
+    .nav-bar ul{
+        display : block;
+        width : fit-content;
+        margin : 80px auto 0 auto;
+        text-align : center;
+        transition : 0.5s;
+    }
+    .nav-bar.active ul{
+        opacity : 1;
+    }
+    .nav-bar ul lu a{
+        margin-bottom : 12px;
+    }
+}
+/*--------------------------------------------------------*/
+/*About Me CSS*/
+.about-me{
+    margin-top: 20vh;
+}
+.about-me > p{
+    margin-top: 2vh;
+    font-size : 1.3em;
+    margin-bottom : 5vh;
+}
+.about-me-icons i{
+    margin-right: 4vw;
+    cursor : pointer;
+}
+.about-me-icons{
+    display : flex;
+    align-items: center;
+}
+.resume-info{
+    cursor : pointer;
+    display : flex;
+    align-items: center;
+}
+.resume-info i{
+    margin-right: 1vw;
+    font-size: 1.65em;
+}
+.resume-info p{
+    margin : 0;
+    padding : 0;
+    font-weight:600;
+    font-size : 1.4em;
+}
+/*--------------------------------------------------------*/
+/*News CSS*/
+.news{
 
+    margin-top: 5vh;
+}
+/*--------------------------------------------------------*/
+/*Contact CSS*/
+.contact-container{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-form{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap : 20px;
+}
+.contact-input{
+    width : 400px;
+    height : 50px;
+    border-width : 2px;
+    outline : none;
+    padding-left : 25px;
+    border-radius: 30px;
+}
+/*--------------------------------------------------------*/

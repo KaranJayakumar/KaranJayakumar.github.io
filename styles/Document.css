@@ -7,9 +7,22 @@
     box-sizing: border-box;
     font-weight:400;
 }
+h1{
+    font-size: 3.5em;
+}
 body{
     background-color : #fbfbfe;
-    padding : 3vw 8vw
+    padding : 3vw 8vw;
+    height : 200vh;
 }
-
+.section{
+    position: static;
+    bottom : 0px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.section i{
+    cursor: pointer;
+}
 

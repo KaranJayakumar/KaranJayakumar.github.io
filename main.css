@@ -15,6 +15,15 @@ body{
     padding : 3vw 8vw;
     height : 200vh;
 }
+
+#content-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition {
+    opacity: 0;
+}
+
 .section-container{
     display : flex;
     justify-content: center;
@@ -30,6 +39,7 @@ body{
     left : 50%;
     cursor : pointer;
 }
+/*Navigation Bar CSS*/
 header{
     width : 100%;
     height : 80px;
@@ -46,6 +56,7 @@ header{
 .logo span{
     font-size : 28px;
     font-weight : 600;
+    cursor : pointer;
     color : #2f27ce;
 }
 .hamburger{
@@ -54,7 +65,8 @@ header{
 .nav-bar ul{
     display : flex;
 }
-.nav-bar ul li a{
+.nav-bar ul li div{
+    cursor : pointer;
     display : block;
     color : #050315;
     font-size : 20px;
@@ -63,8 +75,7 @@ header{
     transition : 0.2s;
     margin : 0 5px;
 }
-/*Navigation Bar CSS*/
-.nav-bar ul li a:hover{
+.nav-bar ul li div:hover{
     color : #fbfbfe;
     background : #050315;
 }
@@ -97,7 +108,7 @@ header{
     .nav-bar.active ul{
         opacity : 1;
     }
-    .nav-bar ul lu a{
+    .nav-bar ul li div{
         margin-bottom : 12px;
     }
 }

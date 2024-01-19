@@ -12,19 +12,12 @@ h1{
 }
 body{
     background-color : #fbfbfe;
-    padding : 3vw 8vw;
-    height : 200vh;
 }
-
-#content-container {
-    transition: opacity 0.5s ease-in-out;
+section{
+    padding-left : 8vw;
+    padding-right : 8vw;
 }
-
-.page-transition {
-    opacity: 0;
-}
-
-.section-container{
+.divider{
     display : flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +33,9 @@ body{
     cursor : pointer;
 }
 /*Navigation Bar CSS*/
+section.nav{
+    padding-top: 2vw;
+}
 header{
     width : 100%;
     height : 80px;
@@ -49,6 +45,7 @@ header{
     justify-content: space-between;
 }
 .logo{
+    cursor: pointer;
     font-size : 28px;
     font-weight :600;
     color : #050315;
@@ -65,7 +62,7 @@ header{
 .nav-bar ul{
     display : flex;
 }
-.nav-bar ul li div{
+.nav-bar ul li a{
     cursor : pointer;
     display : block;
     color : #050315;
@@ -75,7 +72,7 @@ header{
     transition : 0.2s;
     margin : 0 5px;
 }
-.nav-bar ul li div:hover{
+.nav-bar ul li a:hover{
     color : #fbfbfe;
     background : #050315;
 }
@@ -168,56 +165,65 @@ header{
 }
 /*--------------------------------------------------------*/
 /*Contact CSS*/
-.form-container{
-    display : flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2.5vh;
+section.contact-section{
+    background-color: #ebedf0;
+    padding-top: 8vh;
+    margin-bottom: 0;
 }
-.contact-section > h2{
-    margin-top : 3vh;
+section.contact-section div{
+    margin-top: 5vh;
+    margin-bottom : 4vh;
+
 }
-.contact{
-    padding-bottom: 15vh;
-    display : flex;
-    align-items :center;
-    justify-content: space-between;
+section.contact-section :last-child{
+    padding-bottom : 5vh;
 }
-.contact-form{
-    width : 50%;
-    display : flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.contact-input{
-    width : 400px;
-    height : 50px;
-    border : 2px solid black;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    outline : none;
-    padding-left : 25px;
-    border-radius: 30px;
-}
-.contact-form > button{
-    padding : 10px 30px;
-    border-radius: 30px;
-    align-self: flex-end;
-}
-.contact-form > textarea{
-    resize : none;
-    height : 25vh;
-    padding-top: 10px;
-}
-.social-icons{
-    width : 50%;
-    display : flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.social-icons i{
-    margin-inline: 3vw;
-    margin-top: 3vw;
+section.contact-section div h2{
+    font-weight: 500;
+
 }
 /*--------------------------------------------------------*/
+/*Portfolio CSS*/
+.project-thumbnails{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-thumbnails div {
+    width : 45%;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+.project-thumbnails div h2{
+    margin-top : 2vh;
+    font-weight: 500;
+    font-size: 1.8em;
+    cursor : pointer;
+    margin-bottom: 1vh;
+}
+.project-thumbnails div p{
+    font-weight: 400;
+    font-size : 1.1em;
+    cursor : pointer;
+}
+.project-thumbnails .img-wrapper{
+    width : 100%;
+    height : 25vw;
+    border-radius: 25px;
+    position : relative;
+    z-index: 1;
+}
+.project-thumbnails div img{
+    transition : transform 0.3s ease-in-out;
+    width : 100%;
+    cursor : pointer;
+    height : 25vw;
+    border-color: grey;
+    border-width: 2px;
+}
+.project-thumbnails div img:hover{
+    transform : scale(1.1);
+}
+.portfolio-section{
+    margin-top : 5vh;
+}

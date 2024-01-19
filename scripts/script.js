@@ -9,18 +9,6 @@ function scrollDown(section) {
         element.scrollIntoView({ behavior: 'smooth' });
     }
 }
-function loadPage(page) {
-    // Use AJAX to fetch the content of the selected page
-    fetch(page + '.html')
-        .then(response => response.text())
-        .then(html => {
-            // Update content-container with the fetched HTML
-            document.getElementById('content-container').innerHTML = html;
-        });
+function onHome() {
+    window.location.href = '/index.html';
 }
-
-// Load the "home" page by default when the page loads
-window.onload = function() {
-    console.log("reached onLoad");
-    loadPage('/src/home');
-};

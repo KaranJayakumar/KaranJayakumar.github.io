@@ -2,35 +2,89 @@
 <html lang = "en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f03d6e85a4.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="main.css">
         <script src = "/scripts/script.js"></script>
     </head>
     <body>
+        <section class = "nav">
             <header>
-                <div class = "logo" onclick="loadPage('/src/home')">Kishore <span>Nandakishor</span></div>
+                <div class = "logo" onclick="onHome()">Kishore <span>Nandakishor</span></div>
                 <i class="fa-solid fa-bars hamburger" onclick = "onMenuClick()" style = "color:#050315; "></i>
                 <nav class = "nav-bar">
                     <ul>
                         <li>
-                            <div onclick = "loadPage('/src/portfolio')" >Portfolio</div>
+                            <a href = "/portfolio.html">Portfolio</a>
                         </li>
                         <li>
-                            <div>Teaching</div>
+                            <a href = "/teaching.html">Teaching</a>
                         </li>
                         <li>
-                            <div>Engagement</div>
+                            <a href = "/engagement.html">Engagement</a>
                         </li>
                         <li>
-                            <div>Contact</div>
+                            <a href = "">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-        <div id = "content-container">
+        </section>
+        <section>
+            <div class = "about-me">
+                <h1>About Me</h1>
+                <p>i'm mike, a dedicated ph.d. student deeply engaged in the world of [specific field or topic related to my studies]. armed with [mention any relevant degrees or achievements], my academic journey reflects a commitment to excellence in research. currently, my focus lies in [highlight key areas of research], where i aim to contribute valuable insights. beyond academia, my experiences in [mention any noteworthy extracurricular or professional roles] have broadened my perspective and enhanced my skills. passionate about [specific field], i am eager to explore new frontiers and push the boundaries of knowledge, making meaningful contributions to the ever-evolving landscape of [mike's field of study].</p>
+                <div class = "about-me-icons">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                    <i class="fa-brands fa-square-instagram fa-2x"></i>
+                    <i class="fa-brands fa-github fa-2x"></i>
+                    <div class = "resume-info"> 
+                        <i class="fa-solid fa-file"></i>
+                        <p>Resume</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class = "divider">
+            <div class = "section" onclick = "scrollDown('#news-section')">
+                <i class="fa-solid fa-chevron-down fa-2x"></i>
+            </div>
         </div>
+        <section id = "news-section">
+            <h1>News</h1>
+            <div class = "news">
+                <div class = "news-item">
+                    <i class="fa-solid fa-book fa-4x"></i>
+                    <p>Currently spearheading a cutting-edge project, "HealthAI," leveraging advanced machine learning to enhance diagnostic precision and treatment suggestions in healthcare.</p>
+                </div>
+                <div class = "news-item">
+                    <i class="fa-solid fa-magnifying-glass fa-4x"></i>
+                    <p>An exciting job opportunity is currently available to join Dr. Mike's dynamic team. The position involves contributing to cutting-edge projects at the intersection of artificial intelligence and healthcare.</p>
+                </div>
+                <div class = "news-item">
+                    <i class="fa-brands fa-researchgate fa-4x"></i>
+                    <p>Recently published a groundbreaking paper titled "Advancements in Neural Network-Based Diagnostics." This research explores the integration of neural network models to significantly improve the accuracy of medical diagnostics</p>
+                </div>
+            </div>
+        </section>
+        <section class = "contact-section">        
+            <footer>
+                <h1>Get in touch</h1>
+                <div>
+                    <p>Email</p>
+                    <h2>miensfjs@gmail.com</h2>
+                </div>
+                <div>
+                    <p>Social</p>
+                    <h2>LinkedIn</h2>
+                </div>
+                <div>
+                    <p>Research</p>
+                    <h2>ResearchGate</h2>
+                </div>
+            </footer>
+        </section>
     </body>
 </html>

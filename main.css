@@ -36,7 +36,7 @@ clip-path: inset(0 -100vmax);
     left : 50%;
     cursor : pointer;
 }
-/*Navigation Bar CSS*/
+                                                          /*Navigation Bar CSS*/
 section.nav{
     padding-top: 2vw;
 }
@@ -259,8 +259,30 @@ section.contact-section div h2{
 .project:nth-child(even){
     background-color: #ebedf0;
 }
-.project .collaborators ul{
-}
 .project > *{
     margin-bottom: 3vh;
+}
+/*Teaching CSS*/
+.teaching-section{
+    min-height : 100vh;
+}
+.teaching-section h1{
+    margin-top: 10vh;
+    margin-bottom : 10vh;
+    display : flex;
+    text-align: center;
+}
+.teaching-subject{
+    width : 45%;
+}
+.teaching-subject > *{
+    margin-top : 2vh;
+}
+.teaching-subject :not(:last-child){
+    text-align: center;
+}
+.teaching-listing{
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

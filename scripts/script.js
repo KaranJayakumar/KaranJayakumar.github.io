@@ -12,3 +12,22 @@ function scrollDown(section) {
 function onHome() {
     window.location.href = '/index.html';
 }
+function downloadResume() {
+    // Create a Blob with the file data
+    const pdfPath = '/assets/resume.pdf';
+
+    // Create a download link
+    const a = document.createElement("a");
+    a.href = pdfPath;
+    a.download = "Resume-Kishor.pdf";
+
+    // Append the link to the document
+    document.body.appendChild(a);
+
+    // Trigger a click event on the link
+    a.click();
+
+    // Remove the link from the document
+    document.body.removeChild(a);
+
+}

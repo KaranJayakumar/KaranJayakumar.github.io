@@ -36,21 +36,25 @@
             </nav>
         </header>
     </section>
+        <div id = "scrollToTop" onclick="scrollDown('.nav')">
+            <i class="fa-solid fa-angles-up fa-3x" onclick="scrollDown('.nav')"></i>
+            <p>Scroll to Top</p>
+        </div>
     <section class="portfolio-section">
         <div class="project-thumbnails">
-            <div>
+            <div onclick = "scrollDown('#project-1')">
                 <div class="img-wrapper">
                     <img src="/assets/project-image.jpg">
                 </div>
                 <h2>Project Name</h2>
             </div>
-            <div>
+            <div onclick = "scrollDown('#project-2')">
                 <div class="img-wrapper">
                     <img src="/assets/project-image.jpg">
                 </div>
                 <h2>Project Name</h2>
             </div>
-            <div>
+            <div onclick = "scrollDown('#project-3')">
                 <div class="img-wrapper">
                     <img src="/assets/project-image.jpg">
                 </div>
@@ -88,7 +92,7 @@
             </div>
         </div>
         <div class="project-listing">
-            <div class="project">
+            <div class="project" id = "project-1">
                 <h1>Project Name</h2>
                     <div class="project-desc">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero vitae velit gravida
@@ -140,7 +144,7 @@
                         </ul>
                     </div>
             </div>
-            <div class="full-bleed project">
+            <div class="full-bleed project" id = "project-2">
                 <h1>Project Name</h2>
                     <div class="project-desc">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero vitae velit gravida
@@ -192,7 +196,7 @@
                         </ul>
                     </div>
             </div>
-            <div class="project">
+            <div class="project" id = "project-3">
                 <h1>Project Name</h2>
                     <div class="project-desc">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero vitae velit gravida
@@ -251,7 +255,7 @@
             <h1>Get in touch</h1>
             <div>
                 <p>Email</p>
-                <h2>miensfjs@gmail.com</h2>
+                <h2>miensfjs(at)gmail(dot)com</h2>
             </div>
             <div>
                 <p>Social</p>
@@ -261,6 +265,11 @@
                 <p>Research</p>
                 <h2>ResearchGate</h2>
             </div>
+                <div class = "contact-logos">
+                    <img src = "/assets/Unimelb-Logo.png">
+                    <img src = "/assets/IITLogo.png">
+                    <img src = "/assets/IEEE-Logo.png">
+                </div>
         </footer>
     </section>
 </body>

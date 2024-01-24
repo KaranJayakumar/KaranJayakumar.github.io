@@ -12,6 +12,12 @@ function scrollDown(section) {
 function onHome() {
     window.location.href = '/index.html';
 }
+function scrollToTop() {
+    const nav = document.querySelector('.nav')
+    if (nav) {
+        nav.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 function downloadResume() {
     // Create a Blob with the file data
     const pdfPath = '/assets/resume.pdf';
@@ -29,5 +35,18 @@ function downloadResume() {
 
     // Remove the link from the document
     document.body.removeChild(a);
-
 }
+document.addEventListener("DOMContentLoaded", function() {
+    let scrollButton = document.getElementById('scrollToTop');
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = "flex";
+            scrollButton.style.flexDirection = "column";
+            scrollButton.style.alignItems = "center";
+        } else {
+            scrollButton.style.display = "none";
+        }
+    }
+});

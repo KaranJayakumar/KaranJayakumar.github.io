@@ -17,6 +17,19 @@ section{
     padding-left : 8vw;
     padding-right : 8vw;
 }
+#scrollToTop{
+    display : none;
+    flex-direction: column;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    opacity: 0.5;
+}
+#scrollToTop:hover{
+    opacity : 1;
+}
 .full-bleed{
 box-shadow: 0 0 0 100vmax #ebedf0;
 clip-path: inset(0 -100vmax);
@@ -171,15 +184,25 @@ header{
 /*Contact CSS*/
 section.contact-section{
     background-color: #ebedf0;
-    padding-top: 8vh;
+    padding-top: 5vh;
     margin-bottom: 0;
 }
 section.contact-section div{
     margin-top: 5vh;
     margin-bottom : 4vh;
 }
+.contact-section .contact-logos{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section .contact-logos img{
+    width : 20%;
+    height : auto;
+    margin-inline: 2vw;
+}
 section.contact-section :last-child{
-    padding-bottom : 5vh;
+    padding-bottom : 3vh;
 }
 section.contact-section div h2{
     font-weight: 500;

@@ -165,6 +165,7 @@ header{
     padding-top: 15vh;
 }
 .news{
+    margin-top : 10vh;
     display : flex;
     margin-bottom: 30vh;
 }
@@ -242,15 +243,18 @@ section.contact-section div h2{
 .portfolio-section{
     margin-top : 5vh;
 }
+.project-listing{
+    margin-top : 10vh;
+}
 .project-listing .project{
     min-height : 100vh;
 }
 .project-listing .project h1{
-    font-size: 3em;
+    font-size: 2.3em;
 }
 .project-listing .project h2{
     font-weight : 500;
-    font-size : 2em;
+    font-size : 1.8em;
 }
 .project .project-desc{
     display : flex;
@@ -268,13 +272,12 @@ section.contact-section div h2{
 .project{
     display : flex;
     flex-direction : column;
-    margin-top: 20vh;
     margin-bottom: 10vh;
-    padding-top: 5vh;
     padding-bottom: 5vh;
 }
-.project:nth-child(even){
+.project:nth-child(odd){
     background-color: #ebedf0;
+    padding-top: 5vh;
 }
 .project > *{
     margin-bottom: 3vh;
@@ -330,4 +333,8 @@ section.contact-section div h2{
     margin-bottom: 20vh;
 }
 /* Engagement CSS */
+.engagement-section .engagement{
+    margin-top: 10vh;
+    margin-bottom : 10vh;
+}
 

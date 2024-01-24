@@ -3,6 +3,9 @@ function onMenuClick() {
     navBar = document.querySelector(".nav-bar");
     navBar.classList.toggle("active");
 }
+function openLink(link) {
+    window.open(link);
+}
 function scrollDown(section) {
     const element = document.querySelector(section);
     if (element) {

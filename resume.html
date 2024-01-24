@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
-        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f03d6e85a4.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
         <script src = "/scripts/script.js"></script>
     </head>
     <body>
-        <section class = "nav">
+        <section class = "nav">            
             <header>
                 <div class = "logo" onclick="onHome()">Kishore <span>Nandakishor</span></div>
                 <i class="fa-solid fa-bars hamburger" onclick = "onMenuClick()" style = "color:#050315; "></i>
@@ -37,15 +35,9 @@
                 </nav>
             </header>
         </section>
-        <div id = "scrollToTop" onclick="scrollDown('.nav')">
-            <i class="fa-solid fa-angles-up fa-3x" onclick="scrollDown('.nav')"></i>
-            <p>Scroll to Top</p>
-        </div>
-        <section class = "engagement-section">
-            <div>
-
-
-            </div>
+        <section class = "resume-section">
+            <h1>My resume </h1>
+            <iframe src="/assets/resume.pdf"></iframe>
         </section>
         <section class = "contact-section">        
             <footer>
@@ -69,5 +61,6 @@
                 </div>
             </footer>
         </section>
+    
     </body>
 </html>

@@ -31,26 +31,14 @@ section{
     opacity : 1;
 }
 .full-bleed{
-box-shadow: 0 0 0 100vmax #ebedf0;
-clip-path: inset(0 -100vmax);
+    background-color: #ebedf0;
+    box-shadow: 0 0 0 100vmax #ebedf0;
+    clip-path: inset(0 -100vmax);
 }
-.divider{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vw;
-    margin-bottom: 4vw;
-}
-.section i{
-    margin : 0;
-    padding : 0;
-    position : absolute;
-    bottom : 3vw;
-    left : 50%;
-    cursor : pointer;
-}
-                                                          /*Navigation Bar CSS*/
+/*Navigation Bar CSS*/
 section.nav{
+    position :sticky;
+    z-index: 1000;
     padding-top: 2vw;
 }
 header{
@@ -129,16 +117,31 @@ header{
 /*--------------------------------------------------------*/
 /*About Me CSS*/
 .about-me{
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
-.about-me > p{
+.about-desc > p{
     margin-top: 2vh;
-    font-size : 1.3em;
+    font-size : 1.2em;
     margin-bottom : 5vh;
 }
 .about-me-icons i{
     margin-right: 4vw;
     cursor : pointer;
+}
+.about-desc p{
+    margin-right : 3vw;
+    align-self: center;
+}
+.about-desc{
+    display : flex;
+}
+.about-me img{
+    border-radius: 50%;
+    width : 25%;
+    align-self: flex-start;
+}
+.about-me >img{
+    display : none;
 }
 .about-me-icons{
     display : flex;
@@ -159,6 +162,31 @@ header{
     font-weight:600;
     font-size : 1.4em;
 }
+@media screen and (max-width : 800px) {
+    .divider i{
+        display : none;
+    }
+    .about-me > img{
+        display :block;
+        width : 35%;
+    }
+    .about-desc > img{
+        display : none;
+    }
+    .about-me-section .about-desc{
+        flex-direction: column;
+    }
+}
+.divider{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+.divider div{
+    cursor : pointer;
+}
 /*--------------------------------------------------------*/
 /*News CSS*/
 #news-section h1{
@@ -168,6 +196,9 @@ header{
     margin-top : 10vh;
     display : flex;
     margin-bottom: 30vh;
+}
+#news-section{
+    padding-bottom : 5vh
 }
 #news-section .news ul li{
     list-style-type: disc;
@@ -180,7 +211,6 @@ header{
 /*--------------------------------------------------------*/
 /*Contact CSS*/
 section.contact-section{
-    background-color: #ebedf0;
     padding-top: 5vh;
     margin-bottom: 0;
 }
@@ -209,6 +239,7 @@ section.contact-section div h2{
 .project-thumbnails{
     display : flex;
     flex-wrap: wrap;
+    row-gap: 5vh;
     justify-content: space-between;
 }
 .project-thumbnails div {
@@ -282,6 +313,16 @@ section.contact-section div h2{
 .project > *{
     margin-bottom: 3vh;
 }
+@media screen and (max-width : 900px) {
+    .project .project-desc{
+        flex-direction: column;
+    }
+    .project-desc video{
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        align-self: center;
+    }
+}
 /*Teaching CSS*/
 .teaching-section{
     min-height : 100vh;
@@ -299,7 +340,7 @@ section.contact-section div h2{
     width : 45%;
     display : flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 8vh;
     border-radius : 50;
     border-width: 4px;
@@ -320,15 +361,25 @@ section.contact-section div h2{
     flex-wrap: wrap;
 }
 /* Resume CSS */
-.resume-section{
+.resume-section div{
     display : flex;
-    flex-direction : column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-inline: 2vh;
+}
+.resume-section h1{
+    margin-top: 5vh;
+    text-align: left;
+    font-size : 2em;
 }
 .resume-section iframe{
+    border : none;
     padding-bottom : 3vh;
     width : 70%;
-    height : 90vh;
+    height : 100vh;
     margin-top: 5vh;
     margin-bottom: 20vh;
 }
@@ -337,4 +388,27 @@ section.contact-section div h2{
     margin-top: 10vh;
     margin-bottom : 10vh;
 }
-
+.engagement .description{
+    display : flex;
+}
+.engagement .description video{
+    margin-inline: 5vh;
+}
+.engagement > *{
+    margin-top: 3vh;
+    margin-bottom : 2vh;
+}
+.engagement div > *{
+    margin-bottom : 4vh;
+}
+.engagement:nth-child(even){
+    background-color: #ebedf0;
+    padding-bottom : 3vh;
+    padding-top: 5vh;
+}
+@media screen and (max-width : 900px){
+    .engagement .description{
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -39,14 +39,18 @@
                 </nav>
             </header>
         </section>
-        <section>
+        <section class = "about-me-section">
             <div class = "about-me">
+                <img src = "/assets/headshot.jpg">
                 <h1>About Me</h1>
-                <p>i'm mike, a dedicated ph.d. student deeply engaged in the world of [specific field or topic related to my studies]. armed with [mention any relevant degrees or achievements], my academic journey reflects a commitment to excellence in research. currently, my focus lies in [highlight key areas of research], where i aim to contribute valuable insights. beyond academia, my experiences in [mention any noteworthy extracurricular or professional roles] have broadened my perspective and enhanced my skills. passionate about [specific field], i am eager to explore new frontiers and push the boundaries of knowledge, making meaningful contributions to the ever-evolving landscape of [mike's field of study].</p>
+                <div class = "about-desc">
+                    <p>i'm mike, a dedicated ph.d. student deeply engaged in the world of [specific field or topic related to my studies]. armed with [mention any relevant degrees or achievements], my academic journey reflects a commitment to excellence in research. currently, my focus lies in [highlight key areas of research], where i aim to contribute valuable insights. beyond academia, my experiences in [mention any noteworthy extracurricular or professional roles] have broadened my perspective and enhanced my skills. passionate about [specific field], i am eager to explore new frontiers and push the boundaries of knowledge, making meaningful contributions to the ever-evolving landscape of [mike's field of study].</p>
+                <img src = "/assets/headshot.jpg">
+                </div>
                 <div class = "about-me-icons">
-                    <i class="fa-brands fa-linkedin fa-2x"></i>
-                    <i class="fa-brands fa-square-instagram fa-2x"></i>
-                    <i class="fa-brands fa-github fa-2x"></i>
+                    <i class="fa-solid fa-envelope fa-2x" onclick="openLink()"></i>
+                    <i class="fa-brands fa-linkedin fa-2x" onclick="openLink()"></i>
+                    <i class="fa-brands fa-twitter fa-2x" onclick="openLink()"></i>
                     <div class = "resume-info" onclick="downloadResume()"> 
                         <i class="fa-solid fa-file"></i>
                         <p>Resume</p>
@@ -55,11 +59,11 @@
             </div>
         </section>
         <div class = "divider">
-            <div class = "section" onclick = "scrollDown('#news-section')">
+            <div onclick = "scrollDown('#news-section')">
                 <i class="fa-solid fa-chevron-down fa-2x"></i>
             </div>
         </div>
-        <section id = "news-section">
+        <section class = "full-bleed" id = "news-section">
             <h1>News</h1>
             <div class = "news">
                 <ul>
